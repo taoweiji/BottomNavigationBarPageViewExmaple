@@ -1,4 +1,4 @@
-# Flutter：BottomNavigationBar + PageView 解决切换页面被重置
+# [Flutter：BottomNavigationBar + PageView 解决切换页面被重置](https://www.jianshu.com/p/0f272418a931)
 
 BottomNavigationBar可以非常方便我们实现类似微信的首页的布局方式，使用 BottomNavigationBar 配合 ListView 或者 ScrollView开发，切换页面会导致ListView 又回到了顶部，实际上是需要配合 PageView 才能解决这个问题。
 #### 效果
@@ -98,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 ```
 创建 HomeTabPage，关键的代码是` with AutomaticKeepAliveClientMixin `，`bool get wantKeepAlive => true`。
-```
+```dart
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
